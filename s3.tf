@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "adi.monobucket"
+  bucket = "adi14062001"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -26,7 +26,7 @@ status = "Enabled"
 terraform {
 backend "s3" {
 region = "ap-south-1"
-bucket = "adi.monobucket"
+bucket = "adi14062001"
 key = "prod/terraform.tfstate"
 }
 }
